@@ -15,13 +15,11 @@ write() {
     echo "$@" '#OLIVEBASHRC' >> "$RCFILE"
 }
 
-
-
 install() {
-    echo -n "Enter computer name: "
-    read COMPNAME
     echo -n "Enter path to install: "
     read INSTPATH
+    echo -n "Enter computer name: "
+    read COMPNAME
     INSTPATH=${INSTPATH%/}
     echo -n "Enter color of computer name prompt: "
     read PROMPTCLR
